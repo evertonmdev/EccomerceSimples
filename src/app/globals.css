@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    cursor: none;
+  }
+
+  .hoverAnimationLi {
+    @apply hover:scale-110 transition-all duration-200 border-b-2 border-primary;
+  }
+
+  .ScrollHidden::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .ScrollHidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    filter: grayscale(0);
+    
+  }
+}
